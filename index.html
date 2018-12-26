@@ -1,1 +1,38 @@
-"Hello World!"
+# sendRawTransaction
+
+返回当前块高度。
+
+### 请求
+
+`POST <network>/YOUR-PROJECT-ID`
+
+#### 数据头
+
+`Content-Type: application/json`
+
+### 请求信息
+
+`NULL`
+
+#### EXAMPLE
+```bash
+curl <network>/c67f59119ad7403f9ec1b699ddbaa84d \
+    -X POST \
+    -H "Content-Type: application/json" \
+    -d '{"jsonrpc":"2.0","method":"blockNumber","params":[],"id":83}'
+```
+
+### 返回
+
+#### 返回数据
+`Quantity` - 一个整数的十六进制代码，表示连接到当前块得高度
+#### result
+
+```js
+{
+
+  "jsonrpc": "2.0",
+  "id": 83,
+  "result": "0x1d10"
+}
+```
