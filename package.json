@@ -1,0 +1,37 @@
+{
+  "name": "documentation",
+  "version": "1.0.0",
+  "description": "Infura Documentation",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bottler-dev": "NODE_ENV=development node bottler/index.js ",
+    "bottler": "NODE_ENV=production node bottler/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/INFURA/documentation.git"
+  },
+  "author": "paul christophe @captDaylight <paul@neondaylight.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/INFURA/documentation/issues"
+  },
+  "homepage": "https://github.com/INFURA/documentation#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "fs": "0.0.1-security",
+    "git-origin-url": "^0.3.0",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
